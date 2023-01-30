@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        max-width: 700px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+
+        grid-template-areas: 
+        "container__community container__community"
+        "container__plano container__sobre-nos"
+        ;
+    }
+
+    .container__community {
+        grid-area: container__community;
+    }
+
+    .container__plano {
+        grid-area: container__plano;
+    }
+
+    .container__sobre-nos {
+        grid-area: container__sobre-nos;
+    }
+}

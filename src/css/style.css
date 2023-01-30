@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+
+    --font: 'Karla', sans-serif;
+}
+
+body {
+    font-family: var(--font);
+    font-size: 16px;
+    background-color: var(--Light-Gray);
+    padding: 3rem 2rem;
+}
+
+.container {
+    background-color: white;
+    max-width: 420px;
+    margin: 0 auto;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* container__community */
+
+.container__community {
+    padding: 1.5rem;
+}
+
+.container__community h1{
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--Cyan);
+    text-shadow: 1px 1px 2px var(--Cyan);
+}
+
+.container__community h2 {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--Bright-Yellow);
+    margin: 1rem 0;
+    text-shadow: 1px 1px 2px var(--Bright-Yellow);
+}
+
+.container__community p {
+    color: var(--Grayish-Blue);
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+/* container__preco */
+.container__plano {
+    background-color: var(--Cyan);
+    padding: 1.5rem;
+}
+
+.titulo {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--Light-Gray);
+}
+
+.preco__dolar {
+    color: hsla(203, 44%, 93%, 0.486) ;
+    margin: 1rem 0 .5rem 0 ;
+}
+
+.preco__dolar span {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--Light-Gray);
+    margin-right: 5px;
+}
+
+.full__access {
+    color: var(--Light-Gray);
+    margin-bottom: 1rem;
+}
+
+.container__plano button {
+    width: 100%;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+
+    background-color: var(--Bright-Yellow);
+    color: var(--Light-Gray);
+
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container__plano button:hover {
+    box-shadow: 0px 0px 15px var(--Bright-Yellow);
+}
+
+/* container__sobre-nos */
+
+.container__sobre-nos {
+    background-color: hsla(179, 62%, 43%, 0.781);
+    padding: 1.5rem;
+}
+
+.container__sobre-nos ul {
+    margin-top: 1rem;
+}
+
+.container__sobre-nos ul li {
+    padding-bottom: 5px;
+}
+
+.container__sobre-nos ul li a{
+    color: hsla(203, 44%, 93%, 0.747);
+}
+
+.container__sobre-nos ul li a:hover {
+    color: var(--Bright-Yellow);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 1rem;
+}
+.attribution { font-size: 11px; text-align: center; color: var(--Cyan);}
+.attribution a { color: hsl(228, 45%, 44%); }
